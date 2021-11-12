@@ -1,15 +1,17 @@
 <template>
-  <b-container class="bv-example-row " fluid>
-  <b-row class="justify-content-md-center p-3">
-    <b-col cols="7">
+  <b-container class="bv-example-row" fluid>
+  <b-row class="flex-wrap-reverse container__home">
+    <b-col class="justify-content-center" lg="7" sm="12">
       <p>
         <span>J</span>e suis <br/>
-      Emmanuella Mulanga
-      développeuse fullStack<br/>
-      </p>
+        Emmanuella Mulanga</p>
+      <h1>développeuse FullStack</h1>
       <Button name='about' text='Contactez-moi' />
     </b-col>
-    <b-col cols="5"><img :src="SourceCode"></b-col>
+    <b-col lg="5" sm="12">
+      <b-img class="img-fluid" center :src="SourceCode" alt="Source code">
+    </b-img>
+    </b-col>
   </b-row>
   <About/>
 </b-container>
@@ -36,13 +38,24 @@ export default {
 </script>
 <style lang="scss" scoped>
  @import "@/styles/main.scss";
+ .container__home{
+   @include paddingPages;
+ }
  p{
    align-items: center;
-   font-size : 60px;
+  font-size :4rem;
    color:$colorPolice;
+   line-height: 4.5rem!important;
    span{
-     font-size : 120px !important;
+     font-size : 10rem;
      color:$colorSecondary;
    }
  }
+  h1{
+  align-items: center;
+    font-size :4rem;
+   color:$colorPolice;
+   margin-bottom:3%;
+   font-weight:none !important;
+   }
 </style>
