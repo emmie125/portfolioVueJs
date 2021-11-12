@@ -1,5 +1,7 @@
 <template>
-    <b-button :to="{ name:`${name}`}" squared size="lg">{{text}}</b-button>
+    <b-button class="active-class"
+    :to="{ name:`${name}`}" squared size="lg">
+    {{text}}</b-button>
 </template>
 <script>
 export default {
@@ -13,7 +15,7 @@ export default {
     background-color: $colorSecondary !important;
     border:none !important;
 }
-.btn.active{
+.active-class{
     outline: none !important;
      border:none !important;
 }
