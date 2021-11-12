@@ -1,6 +1,6 @@
 <template>
     <div>
-       <p>Emmie</p>
+       <p>emmie</p>
     </div>
 </template>
 <script >
