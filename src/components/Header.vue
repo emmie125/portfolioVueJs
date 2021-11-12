@@ -4,8 +4,8 @@
 
     <b-navbar-toggle target="navbar-toggle-collapse">
       <template #default="{ expanded }">
-        <b-icon v-if="expanded" icon="chevron-bar-up"></b-icon>
-        <b-icon v-else icon="chevron-bar-down"></b-icon>
+        <Icon v-if="expanded" icon="ri:menu-fill" />
+       <Icon v-else icon="mdi:menu-down" />
       </template>
     </b-navbar-toggle>
 
@@ -16,11 +16,12 @@
        <b-nav-item class="m-1"><b-link :to="{ name:'skill'}">Compétences</b-link></b-nav-item>
        <b-nav-item class="m-1"><b-link :to="{ name:'project'}">Projets</b-link></b-nav-item>
       </b-navbar-nav>
+        <Button name ='about' text='Contact'/>
     </b-collapse>
-    <Button name ='about' text='Contact'/>
   </b-navbar>
 </template>
 <script>
+import { Icon } from '@iconify/vue2';
 import Logo from './Logo.vue';
 import Button from './Button.vue';
 
@@ -29,6 +30,7 @@ export default ({
   components: {
     Logo,
     Button,
+    Icon,
   },
 });
 </script>
