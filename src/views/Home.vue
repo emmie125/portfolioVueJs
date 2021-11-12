@@ -12,11 +12,12 @@
 
 <script>
 // @ is an alias to /src
-import Button from '../components/ButtonPrimary.vue'
+import Button from '../components/ButtonPrimary.vue';
+
 export default {
   name: 'Home',
   components: {
-    Button
+    Button,
   },
 };
 </script>
