@@ -12,7 +12,7 @@
       <b-row  class="m-2">
          <b-col lg="2" sm="2">
            <Icon icon="gis:position" class="logoColor"/>
-          </b-col>
+          </b-col >
           <b-col><p>Kinshasa,RDCongo</p></b-col>
       </b-row>
       <b-row  class="m-2">

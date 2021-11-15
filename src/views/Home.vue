@@ -3,6 +3,7 @@
   <HomeComponent/>
   <About/>
   <Contact/>
+  <NewsLetter/>
 </b-container>
 </template>
 
@@ -11,6 +12,7 @@
 import About from './About.vue';
 import Contact from './Contact.vue';
 import HomeComponent from '../components/HomeComponent.vue';
+import NewsLetter from '../components/NewsLetter.vue';
 
 export default {
   name: 'Home',
@@ -18,6 +20,7 @@ export default {
     About,
     HomeComponent,
     Contact,
+    NewsLetter,
   },
   data() {
     return {
