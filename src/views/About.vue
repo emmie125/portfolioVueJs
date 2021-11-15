@@ -55,7 +55,8 @@
       </b-row>
       <b-row  class="m-2">
         <b-col>
-          <Button name="project" text="Mes projets" color="red" />
+          <Button name="project" text="Mes projets"
+          color="#F4E9E4" backgroundColor="#D60030" />
         </b-col>
       </b-row>
   </b-col>

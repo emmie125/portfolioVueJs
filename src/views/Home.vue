@@ -4,6 +4,7 @@
   <About/>
   <Contact/>
   <NewsLetter/>
+  <Footer/>
 </b-container>
 </template>
 
@@ -13,6 +14,7 @@ import About from './About.vue';
 import Contact from './Contact.vue';
 import HomeComponent from '../components/HomeComponent.vue';
 import NewsLetter from '../components/NewsLetter.vue';
+import Footer from '../components/Footer.vue';
 
 export default {
   name: 'Home',
@@ -21,6 +23,8 @@ export default {
     HomeComponent,
     Contact,
     NewsLetter,
+    Footer,
+
   },
   data() {
     return {
