@@ -1,7 +1,7 @@
 <template>
  <b-row class="container__About">
     <b-row  class="text-center">
-    <Title tilte='À propros'/>
+      <Title tilte='À propros'/>
   </b-row>
   <b-row class="flex-wrap">
     <b-col  lg="5" sm="12">

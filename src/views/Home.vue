@@ -2,12 +2,14 @@
   <b-container class="bv-example-row" fluid>
   <HomeComponent/>
   <About/>
+  <Contact/>
 </b-container>
 </template>
 
 <script>
 // @ is an alias to /src
 import About from './About.vue';
+import Contact from './Contact.vue';
 import HomeComponent from '../components/HomeComponent.vue';
 
 export default {
@@ -15,6 +17,7 @@ export default {
   components: {
     About,
     HomeComponent,
+    Contact,
   },
   data() {
     return {
