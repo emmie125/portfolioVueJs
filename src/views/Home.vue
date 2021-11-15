@@ -1,37 +1,23 @@
 <template>
   <b-container class="bv-example-row" fluid>
-  <b-row class="flex-wrap-reverse container__home">
-    <b-col class="justify-content-center" lg="7" sm="12">
-      <p>
-        <span>J</span>e suis <br/>
-        Emmanuella Mulanga</p>
-      <h1>développeuse FullStack</h1>
-      <Button name='about' text='Contactez-moi' />
-    </b-col>
-    <b-col lg="5" sm="12">
-      <b-img class="img-fluid" center :src="SourceCode" alt="Source code">
-    </b-img>
-    </b-col>
-  </b-row>
+  <HomeComponent/>
   <About/>
 </b-container>
 </template>
 
 <script>
 // @ is an alias to /src
-import Button from '../components/ButtonPrimary.vue';
-import SourceCode from '../assets/Source_code.gif';
 import About from './About.vue';
+import HomeComponent from '../components/HomeComponent.vue';
 
 export default {
   name: 'Home',
   components: {
-    Button,
     About,
+    HomeComponent,
   },
   data() {
     return {
-      SourceCode,
     };
   },
 };
@@ -41,18 +27,20 @@ export default {
  .container__home{
    @include paddingPages;
  }
+ .container__home__presentation{
+   margin-top:4rem;
+ }
  p{
    align-items: center;
   font-size :4rem;
    color:$colorPolice;
-   line-height: 4.5rem!important;
+   line-height: 5rem;
    span{
      font-size : 10rem;
      color:$colorSecondary;
    }
  }
   h1{
-  align-items: center;
     font-size :4rem;
    color:$colorPolice;
    margin-bottom:3%;
