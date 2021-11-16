@@ -10,8 +10,8 @@ Vue.use(VueScrollTo);
 Vue.use(VueScrollTo, {
   container: 'body',
   duration: 500,
-  easing: 'ease',
-  offset: 0,
+  easing: 'linear',
+  offset: 500,
   force: true,
   cancelable: true,
   onStart: false,

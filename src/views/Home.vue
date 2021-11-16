@@ -1,5 +1,5 @@
 <template>
-  <b-container class="bv-example-row" fluid>
+  <b-container id="container" class="bv-example-row" fluid>
   <HomeComponent id="home"/>
   <About id="about"/>
   <Contact id="contact"/>
