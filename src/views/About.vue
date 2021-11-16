@@ -1,5 +1,5 @@
 <template>
- <b-row class="container__About">
+ <b-row class="container__About" sm="12" fluid>
     <b-row  class="text-center">
       <Title tilte='À propros'/>
   </b-row>
@@ -49,8 +49,8 @@
           c'est pourquoi je suis diplômée en informatique depuis 2018 de l'université de Kinshasa.
           Etant passionnée par ce métier, j'ai également entrepris une
           formation dans le développement d'applications
-          web mobile dont je suis titulaire d'un certification Bac+2
-          en informatique de simplon à Kinshasa Digital.</p>
+          web mobile dont je suis titulaire d'une certification Bac+2
+          en informatique de simplon à Kinshasa Digital Academy.</p>
         </b-col>
       </b-row>
       <b-row  class="m-2">

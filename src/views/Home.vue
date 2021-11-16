@@ -1,8 +1,8 @@
 <template>
   <b-container class="bv-example-row" fluid>
-  <HomeComponent/>
-  <About/>
-  <Contact/>
+  <HomeComponent id="home"/>
+  <About id="about"/>
+  <Contact id="contact"/>
   <NewsLetter/>
   <Footer/>
 </b-container>
@@ -30,6 +30,15 @@ export default {
     return {
     };
   },
+  methods: {
+    scrollMeTo(refName) {
+      const element = this.$refs[refName];
+      const top = element.offsetTop;
+
+      window.scrollTo(0, top);
+    },
+  },
+
 };
 </script>
 <style lang="scss" scoped>

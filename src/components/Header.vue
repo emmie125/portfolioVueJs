@@ -11,12 +11,15 @@
 
     <b-collapse id="navbar-toggle-collapse" is-nav >
       <b-navbar-nav class="ml-auto header__navbar-color" >
-       <b-nav-item class="m-1"><b-link :to="{ name:'home'}">Accueil</b-link></b-nav-item>
-       <b-nav-item class="m-1"><b-link :to="{ name:'about'}">À propos</b-link></b-nav-item>
+       <b-nav-item class="m-1"><b-link :to="{ name:'home'}"
+       v-scroll-to="'#home'">Accueil</b-link></b-nav-item>
+       <b-nav-item class="m-1"><b-link :to="{ name:'home'}" href="/#about"
+       v-scroll-to="'#about'" >À propos</b-link></b-nav-item>
        <b-nav-item class="m-1"><b-link :to="{ name:'skill'}">Compétences</b-link></b-nav-item>
-       <b-nav-item class="m-1"><b-link :to="{ name:'project'}">Projets</b-link></b-nav-item>
+       <b-nav-item class="m-1"><b-link :to="{ name:'skill'}"
+       v-scroll-to="'#about'">Projets</b-link></b-nav-item>
       </b-navbar-nav>
-        <Button name ='about' text='Contact'/>
+        <Button  name='home' v-scroll-to="'#contact'" text='Contact'/>
     </b-collapse>
   </b-navbar>
 </template>

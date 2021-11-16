@@ -1,12 +1,12 @@
 <template>
     <b-button class="active-class"
-    :to="{ name:`${name}`}" squared size="lg">
+    :to="{ name:`${name}`}" :href="href" size="lg">
     {{text}}</b-button>
 </template>
 <script>
 export default {
   name: 'Button',
-  props: ['name', 'text'],
+  props: ['name', 'text', 'href'],
 };
 </script>
 <style lang="scss" scoped>
