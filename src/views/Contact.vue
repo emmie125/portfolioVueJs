@@ -52,6 +52,7 @@
  </b-row>
 </template>
 <script>
+import axios from 'axios';
 import Title from '../components/Title.vue';
 import iconContact from '../assets/Mention-cuate.png';
 
@@ -74,6 +75,19 @@ export default ({
   methods: {
     onSubmit(event) {
       event.preventDefault();
+      const headersConfig = { 'Access-Control-Allow-Origin': '*', 'content-type': 'application/json' };
+
+      const api = 'http://127.0.0.1:8000/api';
+      const config = axios.create({ headers: headersConfig, baseURL: api });
+
+      config.post('/contacts/',
+        JSON.stringify(this.form))
+        .then((response) => {
+          console.log(response);
+        })
+        .catch((error) => {
+          console.log(error);
+        });
       console.log(JSON.stringify(this.form));
     },
     onReset(event) {
