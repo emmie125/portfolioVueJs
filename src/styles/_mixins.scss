@@ -1,0 +1,12 @@
+@mixin paddingPages {
+  padding: 0% 3% 3% 3%;
+}
+@mixin title {
+   padding: 4% 0%;
+   font-size: $titleSize !important;
+   font-weight: bold !important;
+  }
+  @mixin iconStyle {
+    color:$colorSecondary;
+   font-size:30px;
+   }
