@@ -1,7 +1,7 @@
 /* eslint-disable import/extensions */
 <template>
-  <b-navbar toggleable="sm" fixed='top' class="navbar justify-content-between " align-h="center">
-    <b-navbar-brand :to="{ name:'home'}" class="m-1"
+  <b-navbar toggleable="sm" fixed='top' class="navbar justify-content-between" align-h="center">
+    <b-navbar-brand :to="{ name:'home'}"
     v-scroll-to="{
         el: '#home',
         easing: 'easy',
@@ -53,7 +53,7 @@
         easing: 'easy',
         offset: -60,
         duration: 500,
-      }" text='Contact'/>
+      }" text='Contact' class="btn-nav"/>
     </b-collapse>
   </b-navbar>
 </template>
@@ -71,26 +71,9 @@ export default ({
   },
   data() {
     return {
-      options: {},
     };
   },
   methods: {
-    scrollToElements(element) {
-      this.options = {
-        el: element,
-        container: 'body',
-        easing: 'easy',
-        offset: -60,
-        duration: 500,
-        force: true,
-        cancelable: true,
-        onStart: false,
-        onDone: false,
-        onCancel: false,
-        x: false,
-        y: true,
-      };
-    },
   },
 });
 </script>
@@ -107,5 +90,10 @@ export default ({
     }
     .navbar-collapse{
         flex-grow: 0 !important;
+    }
+    @media screen and (max-width: 1280px) {
+      .btn-nav{
+        margin-bottom: 13px;
+      }
     }
 </style>
