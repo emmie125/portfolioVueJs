@@ -12,7 +12,7 @@
 
 import NewsLetter from '../components/NewsLetter.vue';
 import Footer from '../components/Footer.vue';
-import Project from '../components/Project.vue';
+import Project from './Project.vue';
 import SkillsCompenent from '../components/SkillsCompenent.vue';
 
 export default {

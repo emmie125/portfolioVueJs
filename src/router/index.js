@@ -29,9 +29,9 @@ const routes = [
     path: '/skill',
     name: 'skill',
     // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
+    // this generates a separate chunk (skill.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/Skills.vue'),
+    component: () => import(/* webpackChunkName: "skill" */ '../views/Skills.vue'),
   },
 ];
 // const scrollTo = scrollBehavior (to, from, savedPosition);

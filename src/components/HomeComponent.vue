@@ -7,7 +7,12 @@
         Emmanuella Mulanga</p>
       <h1>développeuse FullStack</h1>
      <Button class="m-2" name="home"
-     v-scroll-to="scrollToElements('#contact')" text='Contactez-moi' />
+     v-scroll-to="{
+        el: '#about',
+        easing: 'easy',
+        offset: -60,
+        duration: 500,
+      }" text='Contactez-moi' />
     </b-col>
     <b-col  lg="5" sm="12">
       <b-img class="img-fluid" center :src="SourceCode" alt="Source code">

@@ -1,7 +1,13 @@
 /* eslint-disable import/extensions */
 <template>
   <b-navbar toggleable="sm" fixed='top' class="navbar justify-content-between " align-h="center">
-    <b-navbar-brand :to="{ name:'home'}" class="m-1"><Logo/></b-navbar-brand>
+    <b-navbar-brand :to="{ name:'home'}" class="m-1"
+    v-scroll-to="{
+        el: '#home',
+        easing: 'easy',
+        offset: -60,
+        duration: 500,
+      }"><Logo/></b-navbar-brand>
 
     <b-navbar-toggle target="navbar-toggle-collapse">
       <template #default="{ expanded }">
@@ -27,7 +33,7 @@
         duration: 500,
       }" >À propos</b-link></b-nav-item>
        <b-nav-item class="m-1"><b-link :to="{ name:'skill'}"
-       v-scroll-to="{
+        v-scroll-to="{
         el: '#skill',
         easing: 'easy',
         offset: -60,
