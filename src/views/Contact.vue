@@ -86,10 +86,8 @@ export default ({
           },
           body: JSON.stringify(this.form),
         },
-      ).then((data) => {
-        console.log(data);
-      }).catch((err) => {
-        console.log(err);
+      ).then(() => {
+      }).catch(() => {
       });
     },
     onReset(event) {

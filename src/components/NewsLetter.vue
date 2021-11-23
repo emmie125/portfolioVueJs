@@ -30,7 +30,6 @@ export default ({
   methods: {
     onSubmit(event) {
       event.preventDefault();
-      console.log(JSON.stringify(this.form));
 
       fetch(
         'http://127.0.0.1:8000/api/new_letters/',
@@ -44,8 +43,7 @@ export default ({
         },
       ).then((data) => {
         console.log(data);
-      }).catch((err) => {
-        console.log(err);
+      }).catch(() => {
       });
     },
     onReset(event) {

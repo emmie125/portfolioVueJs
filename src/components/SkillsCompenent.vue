@@ -80,10 +80,8 @@ export default {
             }];
           }
         }
-        console.log(this.dataHardSKill.Backend);
       // eslint-disable-next-line no-restricted-syntax
-      }).catch((err) => {
-        console.log(err);
+      }).catch(() => {
       });
     },
     async getSoftSKill(apiSoftSkills) {
@@ -97,7 +95,7 @@ export default {
             this.dataSoftSKill.push({ title: softSkills.title });
           }
         })
-        .catch((err) => { console.log(err); });
+        .catch(() => {});
     },
   },
   mounted() {

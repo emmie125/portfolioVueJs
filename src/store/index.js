@@ -32,10 +32,8 @@ export default new Vuex.Store({
             }];
           }
         }
-        console.log(this.dataHardSKill.Backend);
       // eslint-disable-next-line no-restricted-syntax
-      }).catch((err) => {
-        console.log(err);
+      }).catch(() => {
       });
     },
   },
