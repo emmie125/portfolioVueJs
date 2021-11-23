@@ -1,56 +1,47 @@
 <template>
- <b-row class="container__About" sm="12" fluid>
+ <b-row class="container__about" sm="12" fluid>
     <b-row  class="text-center">
       <Title tilte='À propros'/>
   </b-row>
-  <b-row class="flex-wrap">
+  <b-row class="flex-wrap" >
     <b-col  lg="5" sm="12">
-      <b-img class="img-fluid container__About__photo m-2"
+      <b-img class="img-fluid container__about__photo m-2"
       center :src="EmmiePhoto" alt="Source code">
     </b-img></b-col>
-    <b-col  lg="7" sm="12">
-      <b-row  class="m-2">
-         <b-col lg="2" sm="2">
-           <Icon icon="gis:position" class="logoColor"/>
-          </b-col >
-          <b-col><p>Kinshasa,RDCongo</p></b-col>
+    <b-col  class="offset-md-1" lg="6" sm="12">
+      <b-row  class="mb-3 mt-3">
+            <b-col><Icon icon="gis:position" class="logoColor"/>
+            <span class="container__about__description">Kinshasa,RDCongo</span></b-col>
+      </b-row>
+      <b-row  class="mb-3 mt-3">
+          <b-col><Icon icon="map:university" class="logoColor"/>
+          <span class="container__about__description"> Bac+5, Informatique</span></b-col>
+      </b-row>
+      <b-row  class="mb-3 mt-3">
+           <b-link href="mailto:mulangaemmanuella@gmail.com">
+             <Icon icon="mdi:gmail" class="logoColor"/>mulangaemmanuella@gmail.com</b-link>
+      </b-row>
+      <b-row  class="mb-3 mt-3">
+        <b-link href="https://github.com/emmie125/">  <Icon icon="akar-icons:github-fill" class="logoColor"/>
+          emmie125</b-link>
+      </b-row>
+      <b-row  class="mb-3 mt-3">
+         <b-link href="tel:+243826370009">
+            <Icon icon="bx:bxs-phone" class="logoColor"/>+243826370009</b-link>
       </b-row>
       <b-row  class="m-2">
-        <b-col lg="2" sm="2">
-          <Icon icon="map:university" class="logoColor"/>
-        </b-col>
-        <b-col><p>Bac +5, Informatique</p></b-col>
-      </b-row>
-      <b-row  class="m-2">
-        <b-col lg="2" sm="2">
-          <Icon icon="mdi:gmail" class="logoColor"/>
-        </b-col>
-         <b-col>
-           <b-link href="mailto:mulangaemmanuella@gmail.com">mulangaemmanuella@gmail.com</b-link>
-        </b-col>
-      </b-row>
-      <b-row  class="m-2">
-        <b-col lg="2" sm="2">
-          <Icon icon="akar-icons:github-fill" class="logoColor"/>
-        </b-col>
-        <b-col><b-link href="https://github.com/emmie125/">emmie125</b-link></b-col>
-      </b-row>
-      <b-row  class="m-2">
-        <b-col lg="2" sm="2">
-          <Icon icon="bx:bxs-phone" class="logoColor"/>
-        </b-col>
-        <b-col><b-link href="tel:+243826370009">+243826370009</b-link></b-col>
-      </b-row>
-      <b-row  class="m-2">
-        <b-col class="justify-content-center">
-          <p>Je m'appelle Emmanuella, je suis née à Kinshasa et
+        <b-col class="justify-content-center container__about__description">
+          <b-row class="justify-content-center mb-2 mt-2">
+            Je m'appelle Emmanuella, je suis née à Kinshasa et
           j'y ai passé toute ma vie d’étudiante.
           J'aime la découverte et la technologie
-          c'est pourquoi je suis diplômée en informatique depuis 2018 de l'université de Kinshasa.
-          Etant passionnée par ce métier, j'ai également entrepris une
+          c'est pourquoi je suis diplômée en informatique depuis 2018
+          de l'université de Kinshasa.</b-row>
+          <b-row class="justify-content-center mb-2 mt-2">
+            Etant passionnée par ce métier, j'ai également entrepris une
           formation dans le développement d'applications
           web mobile dont je suis titulaire d'une certification Bac+2
-          en informatique de simplon à Kinshasa Digital Academy.</p>
+          en informatique de simplon à Kinshasa Digital Academy.</b-row>
         </b-col>
       </b-row>
       <b-row  class="m-2">
@@ -90,25 +81,26 @@ export default {
 </script>
 <style lang="scss" scoped>
  @import "@/styles/main.scss";
- .container__About{
+ .container__about{
    background-color:$colorPrimary;
     @include paddingPages;
     &__photo{
      border:5px solid $colorSecondary;
     }
- }
- p{
-     color: $colorPolice;
-     font-size:$textSize;
+    &__description{
+      color:black;
+      font-size:18px;
+    }
  }
  a{
    color: $colorPolice;
-   font-size:$textSize;
+   font-size:18px;
   &:hover{
     color: $colorPolice;
   }
  }
  .logoColor{
    @include iconStyle;
+   margin-right:23px;
  }
 </style>

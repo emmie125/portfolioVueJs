@@ -28,16 +28,16 @@ export default {
 .btn {
     background-color: $colorPrimary;
     color: $colorSecondary;
-    border:3px solid $colorSecondary !important;
+    border:2px solid $colorSecondary !important;
     font-size: $sizeButton !important;
-    padding: 1% 7% 1% 7% !important;
+    padding: 1%!important;
 }
 .btn:hover{
     outline: none !important;
      border:none !important;
     color: $colorSecondary;
     background-color: $colorPrimary;
-    border:3px solid $colorSecondary !important;
-    padding: 1% 7% 1% 7% !important;
+    border:2px solid $colorSecondary !important;
+     padding: 1% !important;
 }
 </style>
