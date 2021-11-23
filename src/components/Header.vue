@@ -13,14 +13,41 @@
     <b-collapse id="navbar-toggle-collapse" is-nav >
       <b-navbar-nav class="ml-auto header__navbar-color" >
        <b-nav-item class="m-1"><b-link :to="{ name:'home'}"
-       v-scroll-to="scrollToElements('#home')">Accueil</b-link></b-nav-item>
-       <b-nav-item class="m-1"><b-link :to="{ name:'home'}" href="/#about"
-       v-scroll-to="scrollToElements('#about')" >À propos</b-link></b-nav-item>
-       <b-nav-item class="m-1"><b-link :to="{ name:'skill'}">Compétences</b-link></b-nav-item>
+       v-scroll-to="{
+        el: '#home',
+        easing: 'easy',
+        offset: -60,
+        duration: 500,
+      }">Accueil</b-link></b-nav-item>
+       <b-nav-item class="m-1"><b-link :to="{ name:'home'}"
+       v-scroll-to="{
+        el: '#about',
+        easing: 'easy',
+        offset: -60,
+        duration: 500,
+      }" >À propos</b-link></b-nav-item>
        <b-nav-item class="m-1"><b-link :to="{ name:'skill'}"
-       v-scroll-to="scrollToElements('#project')">Projets</b-link></b-nav-item>
+       v-scroll-to="{
+        el: '#skill',
+        easing: 'easy',
+        offset: -60,
+        duration: 500,
+      }">
+         Compétences</b-link></b-nav-item>
+       <b-nav-item class="m-1"><b-link :to="{ name:'skill'}"
+       v-scroll-to="{
+        el: '#projet',
+        easing: 'easy',
+        offset: -60,
+        duration: 500,
+      }">Projets</b-link></b-nav-item>
       </b-navbar-nav>
-        <Button  name='home' v-scroll-to="scrollToElements('#contact')" text='Contact'/>
+        <Button  name='home' v-scroll-to="{
+        el: '#contact',
+        easing: 'easy',
+        offset: -60,
+        duration: 500,
+      }" text='Contact'/>
     </b-collapse>
   </b-navbar>
 </template>
@@ -38,11 +65,12 @@ export default ({
   },
   data() {
     return {
+      options: {},
     };
   },
   methods: {
     scrollToElements(element) {
-      const options = {
+      this.options = {
         el: element,
         container: 'body',
         easing: 'easy',
@@ -56,7 +84,6 @@ export default ({
         x: false,
         y: true,
       };
-      return options;
     },
   },
 });

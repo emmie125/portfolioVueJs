@@ -10,7 +10,7 @@
 
 <script>
 // @ is an alias to /src
-import About from './About.vue';
+import About from '../components/About.vue';
 import Contact from './Contact.vue';
 import HomeComponent from '../components/HomeComponent.vue';
 import NewsLetter from '../components/NewsLetter.vue';
@@ -43,9 +43,6 @@ export default {
 </script>
 <style lang="scss" scoped>
  @import "@/styles/main.scss";
- .container__home{
-   @include paddingPages;
- }
  .container__home__presentation{
    margin-top:4rem;
  }

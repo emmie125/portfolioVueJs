@@ -25,7 +25,7 @@
       label-for="input-2"  class="container__Contact-form">
         <b-form-input
           id="input-2"
-          v-model="form.name"
+          v-model="form.username"
           placeholder="Enter name"
           required
         ></b-form-input>
@@ -52,7 +52,7 @@
  </b-row>
 </template>
 <script>
-import axios from 'axios';
+
 import Title from '../components/Title.vue';
 import iconContact from '../assets/Mention-cuate.png';
 
@@ -66,7 +66,7 @@ export default ({
       iconContact,
       form: {
         email: '',
-        name: '',
+        username: '',
         message: '',
       },
       show: true,
@@ -75,28 +75,29 @@ export default ({
   methods: {
     onSubmit(event) {
       event.preventDefault();
-      const headersConfig = { 'Access-Control-Allow-Origin': '*', 'content-type': 'application/json' };
 
-      const api = 'http://127.0.0.1:8000/api';
-      const config = axios.create({ headers: headersConfig, baseURL: api });
-
-      config.post('/contacts/',
-        JSON.stringify(this.form))
-        .then((response) => {
-          console.log(response);
-        })
-        .catch((error) => {
-          console.log(error);
-        });
-      console.log(JSON.stringify(this.form));
+      fetch(
+        'http://127.0.0.1:8000/api/contacts/',
+        {
+          method: 'POST',
+          headers: {
+            'Access-Control-Allow-Origin': '*',
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(this.form),
+        },
+      ).then((data) => {
+        console.log(data);
+      }).catch((err) => {
+        console.log(err);
+      });
     },
     onReset(event) {
       event.preventDefault();
       // Reset our form values
       this.form.email = '';
-      this.form.name = '';
-      this.form.food = null;
-      this.form.checked = [];
+      this.form.username = '';
+      this.form.message = '';
       // Trick to reset/clear native browser form validation state
       this.show = false;
       this.$nextTick(() => {

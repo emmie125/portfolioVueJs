@@ -1,6 +1,7 @@
 <template>
   <b-container class="bv-example-row" fluid>
-    <Project id="project"/>
+    <SkillsCompenent id="skill"/>
+    <Project id="projet"/>
   <NewsLetter/>
   <Footer/>
 </b-container>
@@ -11,7 +12,8 @@
 
 import NewsLetter from '../components/NewsLetter.vue';
 import Footer from '../components/Footer.vue';
-import Project from './Project.vue';
+import Project from '../components/Project.vue';
+import SkillsCompenent from '../components/SkillsCompenent.vue';
 
 export default {
   name: 'Skills',
@@ -19,6 +21,7 @@ export default {
     NewsLetter,
     Footer,
     Project,
+    SkillsCompenent,
 
   },
   data() {
@@ -29,7 +32,4 @@ export default {
 </script>
 <style lang="scss" scoped>
  @import "@/styles/main.scss";
- .container__home{
-   @include paddingPages;
- }
 </style>

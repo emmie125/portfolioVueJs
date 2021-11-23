@@ -1,5 +1,5 @@
 <template>
-    <b-button class="active-class"
+    <b-button class="active-class" squared
     :to="{ name:`${name}`}" :href="href" size="lg">
     {{text}}</b-button>
 </template>
