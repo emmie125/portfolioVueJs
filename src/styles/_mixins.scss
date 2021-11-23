@@ -11,3 +11,20 @@
     color:$colorSecondary;
    font-size:30px;
    }
+   @mixin button {
+    .btn {
+      background-color: $colorPrimary !important;
+      color: $colorSecondary !important;
+      border:2px solid $colorSecondary !important;
+      font-size: $sizeButton !important;
+      padding: 1%!important;
+  }
+  .btn:hover{
+      outline: none !important;
+       border:none !important;
+      color: $colorSecondary;
+      background-color: $colorPrimary;
+      border:2px solid $colorSecondary !important;
+       padding: 1% !important;
+  }
+   }

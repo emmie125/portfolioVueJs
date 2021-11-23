@@ -40,8 +40,9 @@
       max-rows="6"
         ></b-form-textarea>
       </b-form-group>
-      <b-button type="submit" variant="primary">Submit</b-button>
-      <b-button type="reset" variant="danger">Reset</b-button>
+      <b-button  size="lg" type="submit" squared class="btn">
+        Enregistrer</b-button>
+      <b-button size="lg" type="reset" variant="danger" squared>Réinitialiser</b-button>
     </b-form>
     </b-col>
     <b-col lg="6">
@@ -116,5 +117,9 @@ export default ({
 }
 .container__contact-btn{
     margin-left: 80%;
+}
+.btn{
+  margin-left:13px;
+   @include button;
 }
 </style>
