@@ -84,9 +84,6 @@ export default ({
         &__logo{
           margin-left: 3%;
         }
-        &__toggle{
-           margin-right: 3%;
-        }
     }
     .header__navbar-color{
         a{
@@ -100,5 +97,9 @@ export default ({
       .btn-nav{
         margin-bottom: 13px;
       }
-    }
+    .navbar{
+      &__toggle{
+           margin-right: 3%;
+        }
+    }}
 </style>
