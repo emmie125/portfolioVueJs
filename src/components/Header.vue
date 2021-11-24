@@ -16,7 +16,7 @@
       </template>
     </b-navbar-toggle>
 
-    <b-collapse id="navbar-toggle-collapse" is-nav class="navbar__toggle">
+    <b-collapse id="navbar-toggle-collapse" is-nav class="navbar__menu">
       <b-navbar-nav class="ml-auto header__navbar-color" >
        <b-nav-item class="m-1"><b-link :to="{ name:'home'}"
        v-scroll-to="{
@@ -101,5 +101,8 @@ export default ({
       &__toggle{
            margin-right: 3%;
         }
+      &__menu{
+        padding-left: 13px;
+      }
     }}
 </style>
