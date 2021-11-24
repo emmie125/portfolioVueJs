@@ -3,7 +3,7 @@
     <b-col class="container__home__presentation justify-content-center "
     lg="7" sm="12" fluid>
       <p>
-        <span>J</span>e suis <br/>
+        <span>Bonjour, Je suis</span> <br/>
         Emmanuella Mulanga</p>
       <h1>Développeuse FullStack</h1>
      <Button class="m-2" name="home"
@@ -14,7 +14,7 @@
         duration: 500,
       }" text='Contactez-moi' />
     </b-col>
-    <b-col  lg="5" sm="12" fluid>
+    <b-col  lg="5" class="container__home__image" fluid>
       <b-img class="img-fluid" center :src="SourceCode" alt="Source code">
     </b-img>
     </b-col>
@@ -52,7 +52,7 @@ export default {
    color:$colorPolice;
    line-height: 5rem;
    span{
-     font-size : 10rem;
+     font-size : 5rem;
      color:$colorSecondary;
    }
  }
@@ -64,6 +64,9 @@ export default {
    }
    @media screen and (max-width: 1280px)
 {
+  .container__home__image{
+    display:none;
+  }
   .container__home__presentation{
    margin-top:8rem;
    padding-bottom: 5rem;
@@ -77,7 +80,7 @@ export default {
    color:$colorPolice;
    line-height: 5rem;
    span{
-     font-size : 8rem;
+     font-size : 5rem;
      color:$colorSecondary;
    }
  }
