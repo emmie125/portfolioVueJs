@@ -1,7 +1,7 @@
 /* eslint-disable import/extensions */
 <template>
   <b-navbar toggleable="sm" fixed='top' class="navbar justify-content-between" align-h="center">
-    <b-navbar-brand :to="{ name:'home'}"
+    <b-navbar-brand :to="{ name:'home'}" class="navbar__logo"
     v-scroll-to="{
         el: '#home',
         easing: 'easy',
@@ -9,14 +9,14 @@
         duration: 500,
       }"><Logo/></b-navbar-brand>
 
-    <b-navbar-toggle target="navbar-toggle-collapse">
+    <b-navbar-toggle target="navbar-toggle-collapse" class="navbar__toggle">
       <template #default="{ expanded }">
         <Icon v-if="expanded" icon="ri:menu-fill" />
        <Icon v-else icon="mdi:menu-down" />
       </template>
     </b-navbar-toggle>
 
-    <b-collapse id="navbar-toggle-collapse" is-nav >
+    <b-collapse id="navbar-toggle-collapse" is-nav class="navbar__toggle">
       <b-navbar-nav class="ml-auto header__navbar-color" >
        <b-nav-item class="m-1"><b-link :to="{ name:'home'}"
        v-scroll-to="{
@@ -81,7 +81,12 @@ export default ({
     @import "@/styles/main.scss";
     .navbar{
         background-color:$colorPrimary;
-        padding: 0px 30px 0px 30px;
+        &__logo{
+          margin-left: 3%;
+        }
+        &__toggle{
+           margin-right: 3%;
+        }
     }
     .header__navbar-color{
         a{
