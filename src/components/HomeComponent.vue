@@ -6,13 +6,15 @@
         <span>Bonjour, Je suis</span> <br/>
         Emmanuella Mulanga</p>
       <h1>Développeuse FullStack</h1>
-     <Button class="m-2" name="home"
+     <div class="container__home__presentation__button">
+       <Button class=" text-center m-2" name="home"
      v-scroll-to="{
         el: '#about',
         easing: 'easy',
         offset: -60,
         duration: 500,
       }" text='Contactez-moi' />
+     </div>
     </b-col>
     <b-col  lg="5" class="container__home__image" fluid>
       <b-img class="img-fluid" center :src="SourceCode" alt="Source code">
@@ -64,16 +66,19 @@ export default {
    }
    @media screen and (max-width: 1280px)
 {
+  .container__home{
+    align-items: center;
+    justify-content: center;
+  }
   .container__home__image{
     display:none;
   }
   .container__home__presentation{
    margin-top:8rem;
    padding-bottom: 5rem;
-   align-items: center;
- }
- .container__home__presentation{
-    align-content: center !important;
+   &__button{
+     widows: 100%;
+   }
  }
   p{
   font-size :3rem;

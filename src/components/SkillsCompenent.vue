@@ -1,37 +1,49 @@
 <template>
-<b-row class="justify-content-center">
+<b-row class="justify-content-center container__skill">
    <Title tilte='Compétences' class="text-center"/>
-   <b-row s="12" class="m-2">
-     <h2>Compétences Backend</h2>
-        <b-col s="5" :key="index" v-for="(technology,index) in HardSKill.Backend"
-        deck class="text-center hardSkills  justify-content-between flex-wrap m-2">
-        <h3>{{technology.name}} </h3>
-        <p><Icon :icon="technology.image" class="icon"/></p>
-        </b-col>
-    </b-row>
-     <b-row s="12" class="m-2">
-     <h2>Compétences Frontend</h2>
-        <b-col s="5" :key="index" v-for="(technology,index) in HardSKill.Frontend"
-        deck class="text-center hardSkills  justify-content-between flex-wrap m-2">
-        <h3>{{technology.name}} </h3>
-        <p><Icon :icon="technology.image" class="icon"/></p>
-        </b-col>
-    </b-row>
-      <b-row s="12" class="m-2" >
-     <h2>Compétences Maquettage</h2>
-        <b-col s="5"  :key="index" v-for="(technology,index) in HardSKill.Maquettage"
-        deck class="text-center hardSkills justify-content-between flex-wrap m-2">
-        <h3>{{technology.name}} </h3>
-        <p><Icon :icon="technology.image" class="icon"/></p>
-        </b-col>
-    </b-row>
-     <b-row s="12" class="m-2" >
-     <h2>Compétences Transversales</h2>
-        <b-col s="5"  :key="index" v-for="(softSkills,index) in dataSoftSKill"
-        deck class="text-center hardSkills justify-content-between flex-wrap m-2 p-3">
+   <b-row class="justify-content-center  text-center">
+      <b-col sm="12" lg="5" class="m-3">
+      <h2>Backend</h2>
+          <b-row sm="12" lg="6"
+          class=" justify-content-center  text-center hardSkills p-2">
+            <b-col sm="5" lg="3" :key="index" v-for="(technology,index) in HardSKill.Backend"
+          deck class="text-center  justify-content-between flex-wrap m-2">
+          <h3>{{technology.name}} </h3>
+          <p><Icon :icon="technology.image" class="icon"/></p>
+          </b-col>
+          </b-row>
+      </b-col>
+      <b-col sm="12" lg="5" class="m-3">
+      <h2>Frontend</h2>
+          <b-row sm="12" lg="6" class=" justify-content-center  text-center hardSkills p-2">
+              <b-col sm="5" lg="3"
+              :key="index" v-for="(technology,index) in HardSKill.Frontend"
+            deck class="text-center  justify-content-between flex-wrap m-2">
+            <h3>{{technology.name}} </h3>
+            <p><Icon :icon="technology.image" class="icon"/></p>
+            </b-col>
+          </b-row>
+      </b-col>
+    <b-col sm="12" lg="5" class="m-3" >
+     <h2>Maquettage</h2>
+        <b-row sm="12" lg="6" class=" justify-content-center  text-center hardSkills p-2">
+            <b-col sm="5"  :key="index" v-for="(technology,index) in HardSKill.Maquettage"
+          deck class="text-center justify-content-between flex-wrap m-2">
+          <h3>{{technology.name}} </h3>
+          <p><Icon :icon="technology.image" class="icon"/></p>
+          </b-col>
+        </b-row>
+    </b-col>
+    <b-col sm="12" lg="5" class="m-3" >
+     <h2>Transversales</h2>
+        <b-row sm="12" lg="6" class=" justify-content-center  text-center hardSkills p-2">
+          <b-row s="5"  :key="index" v-for="(softSkills,index) in dataSoftSKill"
+        deck class="text-center justify-content-between flex-wrap m-2 p-3">
         <h3>{{softSkills.title}} </h3>
-        </b-col>
-    </b-row>
+          </b-row>
+        </b-row>
+     </b-col>
+   </b-row>
 </b-row>
 </template>
 <script>
@@ -108,7 +120,7 @@ export default {
 </script>
 <style lang="scss" scoped>
 @import "@/styles/main.scss";
-.container{
+.container__skill{
    @include paddingPages;
  }
 h3{
@@ -118,7 +130,8 @@ h3{
 }
 .hardSkills{
   background-color:$colorPrimary;
-  // box-shadow: 0px 7px 4px rgba(236, 80, 113, 0.26);
+  border-radius: 10px;
+  box-shadow: 0px 7px 4px rgba(236, 80, 113, 0.26);
 }
 .icon{
    @include iconStyle;

@@ -8,7 +8,7 @@
      placeholder="Entrer votre adresse mail"></b-form-input>
     </b-row>
       <b-row  lg="12" class="text-center p-3">
-    <div> <b-button squared size="lg" type="submit" variant="primary"
+    <div> <b-button squared size="lg" type="submit" variant=""
      @click="onSubmit">S'enregistrer</b-button></div>
     </b-row>
   </b-row>

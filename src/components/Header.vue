@@ -85,6 +85,9 @@ export default ({
           margin-left: 3%;
         }
     }
+    .navbar__menu{
+       margin-right: 3%;
+      }
     .header__navbar-color{
         a{
             color:$colorPolice;
