@@ -53,7 +53,7 @@
         easing: 'easy',
         offset: -60,
         duration: 500,
-      }" text='Contact' class="btn-nav"/>
+      }" text='Contact' />
     </b-collapse>
   </b-navbar>
 </template>

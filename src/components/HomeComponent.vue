@@ -53,9 +53,12 @@ export default {
   font-size :3rem;
    color:$colorPolice;
    line-height: 5rem;
+   font-family: $fontMontserrat;
    span{
-     font-size : 5rem;
+     font-size : 2rem;
+     font-style: italic;
      color:$colorSecondary;
+     font-family: $fontMonte;
    }
  }
   h1{
@@ -85,7 +88,7 @@ export default {
    color:$colorPolice;
    line-height: 5rem;
    span{
-     font-size : 5rem;
+     font-size : 2rem;
      color:$colorSecondary;
    }
  }

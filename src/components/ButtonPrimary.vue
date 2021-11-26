@@ -1,5 +1,5 @@
 <template>
-    <b-button class="btn" :to="{ name:`${name}`}" squared size="lg"
+    <b-button class="btn p-3" :to="{ name:`${name}`}" squared size="lg"
     :style='customStyle' :type="type">{{text}}</b-button>
 </template>
 <script>
@@ -29,8 +29,6 @@ export default {
     background-color: $colorPrimary;
     color: $colorSecondary;
     border:2px solid $colorSecondary !important;
-    font-size: $sizeButton !important;
-    padding: 1%!important;
 }
 .btn:hover{
     outline: none !important;
@@ -38,6 +36,5 @@ export default {
     color: $colorSecondary;
     background-color: $colorPrimary;
     border:2px solid $colorSecondary !important;
-     padding: 1% !important;
 }
 </style>
