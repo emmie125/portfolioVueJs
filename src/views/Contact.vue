@@ -4,8 +4,8 @@
       <Title tilte='Contact'/>
   </b-row>
   <b-row class="">
-    <b-col lg="6" class="p-1">
-    <b-form @submit="onSubmit" @reset="onReset" v-if="show">
+    <b-col lg="6" class="">
+    <b-form @submit="onSubmit" v-if="show">
       <b-form-group
         id="input-group-1"
         label="Adresse mail:"
@@ -42,7 +42,6 @@
       </b-form-group>
       <b-button  size="lg" type="submit" squared class="btn">
         Enregistrer</b-button>
-      <b-button size="lg" type="reset" variant="danger" squared>Réinitialiser</b-button>
     </b-form>
     </b-col>
     <b-col lg="6">
@@ -88,19 +87,16 @@ export default ({
           body: JSON.stringify(this.form),
         },
       ).then(() => {
+        // Reset our form values
+        this.form.email = '';
+        this.form.username = '';
+        this.form.message = '';
+        // Trick to reset/clear native browser form validation state
+        this.show = false;
+        this.$nextTick(() => {
+          this.show = true;
+        });
       }).catch(() => {
-      });
-    },
-    onReset(event) {
-      event.preventDefault();
-      // Reset our form values
-      this.form.email = '';
-      this.form.username = '';
-      this.form.message = '';
-      // Trick to reset/clear native browser form validation state
-      this.show = false;
-      this.$nextTick(() => {
-        this.show = true;
       });
     },
   },
@@ -115,11 +111,10 @@ export default ({
         margin: 4% 0% 4% 4% !important;
     }
 }
-.container__contact-btn{
-    margin-left: 80%;
-}
 .btn{
-  margin-left:13px;
-   @include button;
+  margin-left:13px !important;
+  background-color: $colorSecondary !important;
+    color: $colorPrimary;
+    border:2px solid $colorSecondary !important;
 }
 </style>

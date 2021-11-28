@@ -24,6 +24,8 @@
           <div class="image-overlay"></div>
         </template>
          <h3>{{projet.title}}</h3>
+         <b-link target="_blank" href="#">
+          <Icon icon="akar-icons:link-chain" class="logoColor"/></b-link>
          </b-carousel-slide>
     </b-carousel>
   </b-row>
@@ -33,12 +35,14 @@
 <script>
 // @ is an alias to /src
 import axios from 'axios';
+import { Icon } from '@iconify/vue2';
 import Title from '../components/Title.vue';
 
 export default {
   name: 'Project',
   components: {
     Title,
+    Icon,
   },
   data() {
     return {
@@ -77,6 +81,9 @@ export default {
  .container__projet{
      @include paddingPages;
      position: relative;
+ }
+ .logoColor{
+   @include iconStyle;
  }
  h3{
   font-size:30px;

@@ -1,19 +1,9 @@
 <template>
     <b-row  class="container__footer">
-        <b-col class="justify-content-center" lg="4">
-            <Logo sizeIcon="40px" />
+        <b-col class="justify-content-center" lg="6">
+            <Logo sizeIcon="30px" />
         </b-col>
-        <b-col lg="4">
-            <b-row><h3>Liens Rapide</h3></b-row>
-            <b-row>
-                <b-link :to="{ name:'home'}">Accueil</b-link>
-                <b-link :to="{ name:'about'}">À propos</b-link>
-                <b-link :to="{ name:'skill'}">Compétences</b-link>
-                <b-link :to="{ name:'project'}">Projets</b-link>
-            </b-row>
-        </b-col>
-        <b-col lg="4">
-             <b-row><h3>Mes coordonnées</h3></b-row>
+        <b-col lg="6">
             <b-row>
                 <b-col>
                     <b-link href="mailto:mulangaemmanuella@gmail.com">

@@ -89,7 +89,7 @@ export default {
    color:$colorPolice;
    line-height: 5rem;
    span{
-     font-size : 1rem;
+     font-size : 1.5rem;
      color:$colorSecondary;
    }
  }
