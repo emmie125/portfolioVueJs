@@ -3,13 +3,13 @@
     <b-row  lg="12" class="text-center">
     <Title tilte='Partage des compétences grâce à la newsletter' class="title-color"/>
     </b-row>
-      <b-row  lg="12" class="text-center">
-     <b-form-input v-model="form.email"  class="p-3"
+      <b-row  lg="7" class="text-center">
+     <b-form-input v-model="form.email"  class="p-2"
      placeholder="Entrer votre adresse mail"></b-form-input>
     </b-row>
       <b-row  lg="12" class="text-center p-3">
-    <div> <b-button squared size="lg" type="submit" variant=""
-     @click="onSubmit">S'enregistrer</b-button></div>
+    <div> <b-button squared size="lg" type="submit" variant="" class="btn__newsletter"
+     @click="onSubmit">NewsLetter</b-button></div>
     </b-row>
   </b-row>
 </template>
@@ -72,8 +72,13 @@ export default ({
  .title-color{
      color:white !important;
  }
- .btn{
-   margin-top: 1%;
+ .btn__newsletter{
+   @include button;
  }
-
+  @media screen and (max-width: 1280px)
+{
+  .title-color{
+    font-size: 18px !important;
+  }
+  }
 </style>

@@ -48,25 +48,17 @@
         duration: 500,
       }">Projets</b-link></b-nav-item>
       </b-navbar-nav>
-        <Button  name='home' v-scroll-to="{
-        el: '#contact',
-        easing: 'easy',
-        offset: -60,
-        duration: 500,
-      }" text='Contact' />
     </b-collapse>
   </b-navbar>
 </template>
 <script>
 import { Icon } from '@iconify/vue2';
 import Logo from './Logo.vue';
-import Button from './Button.vue';
 
 export default ({
   name: 'Header',
   components: {
     Logo,
-    Button,
     Icon,
   },
   data() {

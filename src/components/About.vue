@@ -10,24 +10,25 @@
     </b-img></b-col>
     <b-col  class="offset-md-1" lg="6" sm="12">
       <b-row  class="mb-3 mt-3">
-            <b-col><Icon icon="gis:position" class="logoColor"/>
+            <b-col><Icon icon="clarity:map-marker-line" class="logoColor"/>
             <span class="container__about__description">Kinshasa,RDCongo</span></b-col>
       </b-row>
       <b-row  class="mb-3 mt-3">
-          <b-col><Icon icon="map:university" class="logoColor"/>
+          <b-col><Icon icon="icon-park-outline:degree-hat" class="logoColor"/>
           <span class="container__about__description"> Bac+5, Informatique</span></b-col>
       </b-row>
       <b-row  class="mb-3 mt-3">
            <b-link href="mailto:mulangaemmanuella@gmail.com">
-             <Icon icon="mdi:gmail" class="logoColor"/>mulangaemmanuella@gmail.com</b-link>
+             <Icon icon="clarity:email-line" class="logoColor"/>
+             mulangaemmanuella@gmail.com</b-link>
       </b-row>
       <b-row  class="mb-3 mt-3">
-        <b-link href="https://github.com/emmie125/">  <Icon icon="akar-icons:github-fill" class="logoColor"/>
+        <b-link href="https://github.com/emmie125/">  <Icon icon="akar-icons:github-outline-fill" class="logoColor"/>
           emmie125</b-link>
       </b-row>
       <b-row  class="mb-3 mt-3">
          <b-link href="tel:+243826370009">
-            <Icon icon="bx:bxs-phone" class="logoColor"/>+243826370009</b-link>
+            <Icon icon="akar-icons:phone" class="logoColor"/>+243826370009</b-link>
       </b-row>
       <b-row  class="m-2">
         <b-col class="justify-content-center container__about__description">

@@ -1,7 +1,7 @@
 <template>
-   <b-row class="flex-wrap-reverse container__home">
+   <b-row class="flex-wrap-reverse container__home justify-content-center" fluid>
     <b-col class="container__home__presentation justify-content-center "
-    lg="7" sm="12" fluid>
+    lg="7" sm="12">
       <p>
         <span>Bonjour, Je suis</span> <br/>
         Emmanuella Mulanga</p>
@@ -70,8 +70,9 @@ export default {
    @media screen and (max-width: 1280px)
 {
   .container__home{
-    align-items: center;
+    width:100%;
     justify-content: center;
+    align-content: center;
   }
   .container__home__image{
     display:none;
@@ -84,16 +85,16 @@ export default {
    }
  }
   p{
-  font-size :3rem;
+  font-size :2rem;
    color:$colorPolice;
    line-height: 5rem;
    span{
-     font-size : 2rem;
+     font-size : 1rem;
      color:$colorSecondary;
    }
  }
  h1{
-    font-size :3rem;
+    font-size :2rem;
    color:$colorPolice;
    margin-bottom:3%;
    font-weight:none !important;

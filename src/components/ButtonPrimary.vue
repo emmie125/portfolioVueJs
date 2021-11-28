@@ -1,5 +1,5 @@
 <template>
-    <b-button class="btn p-3" :to="{ name:`${name}`}" squared size="lg"
+    <b-button aria-pressed="true" class="btn p-2" :to="{ name:`${name}`}" squared size="lg"
     :style='customStyle' :type="type">{{text}}</b-button>
 </template>
 <script>
