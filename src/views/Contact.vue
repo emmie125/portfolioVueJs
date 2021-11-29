@@ -77,7 +77,7 @@ export default ({
       event.preventDefault();
 
       fetch(
-        'http://127.0.0.1:8000/api/contacts/',
+        'http://portfoliolaravelapi.herokuapp.com/api/contacts/',
         {
           method: 'POST',
           headers: {
