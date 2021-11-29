@@ -1,33 +1,19 @@
 <template>
   <b-row lg="12" class="text-center justify-content-center container__projet" fluid>
  <Title tilte='Projets' class="text-center"/>
- <b-row>
-    <b-carousel
-    lg="12"
-    class="text-center justify-content-center container__projet__carousel"
-       id="carousel-fade"
-      fade
-      :interval="10000"
-      controls
-      indicators
-      @sliding-start="onSlideStart"
-      @sliding-end="onSlideEnd"
-    >
-       <b-carousel-slide   v-for="(projet,index) in dataProjets" :key="index">
-         <template #img>
-          <img
+  <b-row class="text-center justify-content-center">
+    <b-col lg="5" v-for="(projet,index) in dataProjets" :key="index"
+    class=" container__card position-relative m-3 pb-3">
+       <img
             class="d-block img-fluid w-100 h-80 rounded"
             :src="projet.image"
             alt="image slot"
             :key="index"
           >
-          <div class="image-overlay"></div>
-        </template>
-         <h3>{{projet.title}}</h3>
+          <h3>{{projet.title}}</h3>
          <b-link target="_blank" href="#" class="btn-link p-2">
            Voir<Icon icon="akar-icons:link-chain" class=""/></b-link>
-         </b-carousel-slide>
-    </b-carousel>
+    </b-col>
   </b-row>
 </b-row>
 </template>
@@ -82,13 +68,16 @@ export default {
      @include paddingPages;
      position: relative;
  }
+ .container__card{
+   background-color:$colorPrimary;
+ }
  .logoColor{
    @include iconStyle;
  }
  h3{
   font-size:30px;
   font-weight:600;
-  color:white;
+  color:black;
   }
 .image-overlay {
   top:0;
