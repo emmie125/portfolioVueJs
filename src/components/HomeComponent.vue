@@ -4,8 +4,8 @@
     lg="7" sm="12">
       <p>
         <span>Bonjour, Je suis</span> <br/>
-        Emmanuella Mulanga</p>
-      <h1>Développeuse FullStack</h1>
+        </p>
+      <h1>Emmanuella Mulanga Développeuse FullStack</h1>
      <div class="container__home__presentation__button">
        <Button class=" text-center m-2" name="home"
      v-scroll-to="{
