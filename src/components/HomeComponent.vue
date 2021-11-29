@@ -78,6 +78,7 @@ export default {
     display:none;
   }
   .container__home__presentation{
+    text-align: center;
    margin-top:8rem;
    padding-bottom: 5rem;
    &__button{

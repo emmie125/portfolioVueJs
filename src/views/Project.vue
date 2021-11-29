@@ -24,8 +24,8 @@
           <div class="image-overlay"></div>
         </template>
          <h3>{{projet.title}}</h3>
-         <b-link target="_blank" href="#">
-          <Icon icon="akar-icons:link-chain" class="logoColor"/></b-link>
+         <b-link target="_blank" href="#" class="btn-link p-2">
+           Voir<Icon icon="akar-icons:link-chain" class=""/></b-link>
          </b-carousel-slide>
     </b-carousel>
   </b-row>
@@ -96,6 +96,13 @@ export default {
   height: 100%;
   position: absolute;
   background-color: black;
-  opacity: 0.6;
+  opacity: 0.5;
+}
+.btn-link{
+ margin-left:13px !important;
+  background-color: $colorSecondary !important;
+    color: $colorPrimary;
+    border:3px solid $colorSecondary !important;
+    font-size:1rem;
 }
 </style>
