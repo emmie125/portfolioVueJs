@@ -19,8 +19,7 @@
       </b-row>
       <b-row  class="mb-3 mt-3">
            <b-link href="mailto:mulangaemmanuella@gmail.com">
-             <Icon icon="clarity:email-line" class="logoColor"/>
-             mulangaemmanuella@gmail.com</b-link>
+             <Icon icon="clarity:email-line" class="logoColor"/>mulangaemmanuella@gmail.com</b-link>
       </b-row>
       <b-row  class="mb-3 mt-3">
         <b-link href="https://github.com/emmie125/">  <Icon icon="akar-icons:github-outline-fill" class="logoColor"/>
